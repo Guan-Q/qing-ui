@@ -1,7 +1,7 @@
 import { defineConfig } from 'dumi';
 
-let base = '/react-ui-library-tutorial';
-let publicPath = '/react-ui-library-tutorial/';
+let base = '/qing-ui';
+let publicPath = '/qing-ui/';
 
 if (process.env.SITE_BUILD_ENV === 'PREVIEW') {
   base = '';
