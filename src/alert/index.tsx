@@ -1,6 +1,7 @@
 import React from 'react';
 import t from 'prop-types';
 import './style/index.less';
+
 export interface AlertProps {
   kind?: 'info' | 'positive' | 'negative' | 'warning';
   children?: React.ReactNode;
