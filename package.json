@@ -4,9 +4,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "dumi dev",
-    "build:site": "rimraf doc-site && dumi build",
-    "preview:site": "cross-env SITE_BUILD_ENV=PREVIEW npm run build:site && serve doc-site",
+    "build:site": "rimraf dist && dumi build",
+    "preview:site": "cross-env SITE_BUILD_ENV=PREVIEW npm run build:site && serve dist",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy:site": "npm run build:site && gh-pages -d dist",
     "commit": "git-cz"
   },
   "keywords": [],
@@ -23,6 +24,7 @@
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "dumi": "^2.4.21",
+    "gh-pages": "^6.3.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "prettier": "^3.7.2",
